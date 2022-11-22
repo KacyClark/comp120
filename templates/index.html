@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}A Portfolio for a Cosmetologist{% endblock title %}
+
+{% block content %}
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/namehere.jpg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <!-- <nav class="nav"> -->
+            <!-- <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I am <strong>Tiffany Cooper</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Cosmetologist</p>
+        <img src="img/name.jpg" alt="a picture of Tiffany Cooper smiling" class="intro__img">
+    </section>
+
+    <!-- my services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I Do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Haircuts</h3>
+                <p>Shampoo and styling with every service.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum nesciunt laborum dolore dicta omnis
+                    tenetur sint, impedit soluta dolor, libero molestias laboriosam perspiciatis illum quia ducimus in,
+                    natus ab assumenda?</p>
+            </div>
+            <!--/service-->
+
+            <div class="service">
+                <h3>Hair Colorings</h3>
+                <p>High/low lights, tinting, streaking and frosting.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat sunt repudiandae nulla, fuga
+                    doloremque ad quae accusamus molestiae neque nobis temporibus magnam itaque repellendus tenetur!
+                    Ducimus aliquam maiores dolor quod!</p>
+            </div>
+            <!--/service-->
+
+            <div class="service">
+                <h3>Other</h3>
+                <p>Facials, hair removal, eyebrow shaping, makeup and more.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat sunt repudiandae nulla, fuga
+                    doloremque ad quae accusamus molestiae neque nobis temporibus magnam itaque repellendus tenetur!
+                    Ducimus aliquam maiores dolor quod!</p>
+            </div>
+            <!--/service-->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">See My Work</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I Am</h2>
+        <p class="section__subtitle section__subtitle--about">Beautician Extraordinaire</p>
+
+        <div class="about-me__body">
+            <p>I have been a cosmetologist for ten and a half years, and I still love it.  All the wonderful people I meet.  
+                Keeping up with all the latest trends.  Getting to let the creative Me, out.</p>
+                <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, voluptatem. Itaque numquam dolore
+                aliquid vero eligendi voluptates maiores dignissimos fuga culpa natus ut quos voluptatum vitae,
+                cupiditate, exercitationem id blanditiis!</p>
+                <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident labore quibusdam nemo esse commodi
+                iusto maxime minima quam quas in!</p>
+        </div>
+
+        <img src="{% static 'portrait.jpg' %}" alt="portrait of Tiffany" class="about-me__img">
+    </section>
+
+    <!-- my work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'img/BraidAround.jpg' %}" 
+                alt="braid around head" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'img/Childs-Hair.jpg' %}"
+                alt="little girl's hair style" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'DownUpdo.jpg' %}" 
+                alt="Updo at neck level" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'LongHair.jpg' %}" 
+                alt="long hair in pony tail" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'Med-Gray.jpg' %}" 
+                alt="woman with gray hair" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'MedHair-Curls.jpg' %}" 
+                alt="vintage-look curls" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'Mens-Hair.jpg' %}" 
+                alt="man with short hair" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'ML-Perm.jpg' %}" 
+                alt="long hair perm" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'ShortBlonde.jpg' %}" 
+                alt="trendy short haircut" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+                <img src="{% static 'Twist.jpg' %}" 
+                alt="back view of hair twist" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:info@tiffanycooper.com" class="footer__link">info@tiffanycooper.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com">      
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.twitter.com">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+{% endblock content %}
